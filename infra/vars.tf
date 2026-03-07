@@ -5,12 +5,16 @@
 #-------------------------------------------
 # Configurable variables
 #-------------------------------------------
+variable "cloudflare_account_name" {
+  default = "tim@kye.dev"
+}
+
 variable "region" {
   default = "us-west-2"
 }
 
 variable "domain_name" {
-  default = "APP_NAME.kye.dev"
+  default = "poster.kye.dev"
 }
 
 variable "zone_name" {
@@ -18,5 +22,5 @@ variable "zone_name" {
 }
 
 variable "deno_deploy_acme" {
-  default = "84e3160caf2e7082aeb72eb8._acme.deno.dev."
+  default = "a52fb6e8a1e5fee2508fa6f5._acme.deno.dev."
 }

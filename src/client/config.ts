@@ -8,11 +8,4 @@ export default {
     origin.includes('localhost') || origin.includes('http://127.0.0.1')
       ? 'http://localhost:8080'
       : origin,
-  auth0: {
-    domain: auth0Domain,
-    clientId: auth0ClientId,
-    audience: 'kyeotek',
-    scope: 'openid profile email offline_access',
-    redirectUrl: `${window.location.protocol}//${window.location.host}`,
-  },
 } as const

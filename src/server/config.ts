@@ -12,8 +12,4 @@ export default {
     issuer: 'https://kyeotek-auth0.kye.dev/',
     algorithms: ['RS256'],
   },
-  webpush: {
-    adminEmail: 'tim@kye.dev',
-    keysBase64: Deno.env.get('WEBPUSH_KEYS_BASE64')!,
-  },
 } as const

@@ -5,15 +5,9 @@ import { router } from './trpc.ts'
 import { createAppContext } from './context.ts'
 import config from './config.ts'
 
-import { playerRouter } from './players/routes.ts'
-import { userRouter } from './users/userRoutes.ts'
-
 const staticDir = joinDir(import.meta.url, config.distDir)
 
-const appRouter = router({
-  players: playerRouter,
-  users: userRouter,
-})
+const appRouter = router({})
 
 // Export type router type signature,
 // NOT the router itself.

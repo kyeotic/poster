@@ -28,7 +28,7 @@
     "zod": "npm:zod@^3.25.48"
   },
   "deploy": {
-    "project": "kyeotic-APP_NAME",
+    "project": "kyeotic-poster",
     "exclude": ["**/node_modules"],
     "include": ["src/server", "dist/", "./deno.json"],
     "entrypoint": "src/server/server.ts"

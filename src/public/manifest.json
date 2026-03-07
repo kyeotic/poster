@@ -1,6 +1,6 @@
 {
-  "short_name": "APP_NAME",
-  "name": "APP_NAME - Deno Template",
+  "short_name": "Poster",
+  "name": "Poster",
   "icons": [
     {
       "src": "favicon.ico",

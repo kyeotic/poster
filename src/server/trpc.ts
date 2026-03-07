@@ -24,14 +24,12 @@ export const authProcedure = t.procedure.use(async function isAuthed(opts) {
     if (!authHeader) throw new Error('authorization required')
 
     const token = await verifyJwt(authHeader)
-    const user = await ctx.stores.users.initUser(token)
 
     console.log('loading user', user)
 
     return opts.next({
       ctx: {
         auth: token,
-        user: user,
       },
     })
   } catch (e: unknown) {
