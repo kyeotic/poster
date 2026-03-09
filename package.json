@@ -4,7 +4,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "npm run build && ./scripts/client",
+    "deploy": "run-s build deploy:deno",
+    "deploy:deno": "deployctl deploy --prod --env SPA_ROOT=dist/ --project kyeotic-poster",
     "style": "prettier  --write \"src/**/*.{ts,tsx}\"",
     "style:ci": "prettier --check \"src/**/*.{ts,tsx}\""
   },
@@ -14,6 +15,7 @@
     "@tailwindcss/postcss": "^4.0.17",
     "@trpc/server": "^11.0.0",
     "@types/lodash": "^4.14.191",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.19",
     "prettier": "^3.3.3",
     "tailwindcss": "^4.0.17",

@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@config '../../tailwind.config.cjs';
+@config '../tailwind.config.cjs';
 /* @source inline('grid-cols-{{1..10}}'); */
 
 /*

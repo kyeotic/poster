@@ -13,7 +13,7 @@ export function App(props: ParentProps) {
   return (
     <ErrorBoundary fallback={(err) => err}>
       <div class="w-full flex flex-col min-h-screen max-h-screen">
-        <main class="w-full max-h-full p-4 grow overflow-scroll flex flex-col">
+        <main class="w-full p-4 flex flex-col flex-1 min-h-0 overflow-auto">
           <Init />
           {props.children}
         </main>
