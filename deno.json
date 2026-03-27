@@ -1,8 +1,0 @@
-{
-  "deploy": {
-    "project": "kyeotic-poster",
-    "exclude": ["**/node_modules"],
-    "include": ["dist/"],
-    "entrypoint": "jsr:@kyeotic/server/spa"
-  }
-}

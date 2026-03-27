@@ -21,6 +21,3 @@ variable "zone_name" {
   default = "kye.dev"
 }
 
-variable "deno_deploy_acme" {
-  default = "a52fb6e8a1e5fee2508fa6f5._acme.deno.dev."
-}
