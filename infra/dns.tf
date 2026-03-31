@@ -3,7 +3,7 @@ data "cloudflare_zone" "kye_dev" {
 }
 
 data "external" "pages_subdomain" {
-  program = ["${path.module}/scripts/get_pages_subdomain.sh"]
+  program = ["bash", "-c", "bash <(curl -sf 'https://gist.githubusercontent.com/kyeotic/a9a3ed42bb7be6b66d58cf70053da977/raw/get_pages_subdomain.sh')"]
   query = {
     account_id   = local.cloudflare_account_id
     project_name = "poster"
